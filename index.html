@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burra Vigneswara Reddy — DFIR &amp; Cybersecurity</title>
+  <meta name="description" content="Burra Vigneswara Reddy — Digital Forensics &amp; Incident Response (DFIR) analyst. Email security, ransomware investigation, Windows forensics, threat analysis, and cloud security." />
+  <meta name="author" content="Burra Vigneswara Reddy" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Burra Vigneswara Reddy — DFIR &amp; Cybersecurity" />
+  <meta property="og:description" content="Digital Forensics &amp; Incident Response analyst specializing in BEC, ransomware, and Windows forensics." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%9B%A1%EF%B8%8F</text></svg>" />
+</head>
+<body>
+  <!-- Scanline / grid overlay -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">
+      <span class="nav__prompt">root@dfir</span><span class="nav__sep">:</span><span class="nav__path">~</span><span class="nav__cursor">#</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">/about</a>
+      <a href="#skills">/skills</a>
+      <a href="#experience">/experience</a>
+      <a href="#projects">/projects</a>
+      <a href="#certs">/certs</a>
+      <a href="#contact">/contact</a>
+    </nav>
+    <button class="nav__menu" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <main id="top">
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__status">
+          <span class="dot dot--green"></span> AVAILABLE FOR DFIR / SOC ROLES
+          <span class="hero__loc">// Cincinnati, OH · Open to Remote &amp; Relocation</span>
+        </div>
+
+        <h1 class="hero__name">Burra Vigneswara <span>Reddy</span></h1>
+
+        <div class="hero__role">
+          <span class="hero__role-static">&gt; </span><span id="typed" class="hero__typed"></span><span class="caret">_</span>
+        </div>
+
+        <p class="hero__tagline">
+          Digital Forensics &amp; Incident Response analyst. I investigate intrusions end-to-end —
+          from <strong>initial access</strong> to <strong>containment</strong> — across email
+          compromise, ransomware, and Windows host forensics, and map findings to MITRE ATT&amp;CK.
+        </p>
+
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Investigations</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          <a href="assets/resume.pdf" class="btn btn--ghost" download>Download Résumé</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat"><div class="stat__num" data-count="50" data-suffix="+">0</div><div class="stat__label">Daily Alerts Triaged</div></div>
+          <div class="stat"><div class="stat__num" data-count="20" data-suffix="+">0</div><div class="stat__label">IR Reports Authored</div></div>
+          <div class="stat"><div class="stat__num" data-count="8" data-suffix="+">0</div><div class="stat__label">Certifications</div></div>
+          <div class="stat"><div class="stat__num" data-count="3.875">0.000</div><div class="stat__label">Grad GPA</div></div>
+        </div>
+      </div>
+
+      <!-- Terminal panel -->
+      <aside class="hero__terminal" aria-hidden="true">
+        <div class="term">
+          <div class="term__bar">
+            <span class="term__btn term__btn--r"></span>
+            <span class="term__btn term__btn--y"></span>
+            <span class="term__btn term__btn--g"></span>
+            <span class="term__title">triage — analyst@soc</span>
+          </div>
+          <div class="term__body" id="termBody"></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2 class="section__title"><span class="section__hash">#</span> whoami</h2>
+        <div class="section__rule"></div>
+      </div>
+
+      <div class="about">
+        <div class="about__text">
+          <p>
+            I'm a security analyst and <strong>M.Eng. Computer Science</strong> candidate at the
+            University of Cincinnati (GPA 3.875) with hands-on <strong>SOC and Incident Response</strong>
+            experience. I spent a year triaging live alerts in <strong>Splunk</strong> and
+            <strong>Microsoft Sentinel</strong>, running phishing and ransomware investigations, and
+            authoring the reports that postmortems and detection engineering were built on. I like
+            the part of security where something has already gone wrong — reconstructing what an
+            attacker did, in what order, and proving it with artifacts.
+          </p>
+          <p>
+            My work centers on <strong>business email compromise</strong>, <strong>ransomware
+            triage</strong>, and <strong>Windows host forensics</strong>: pulling apart Event Logs,
+            registry hives, Prefetch, Amcache/Shimcache and email headers, analyzing PCAPs for
+            exfiltration, building defensible timelines, documenting IOCs, and mapping the kill
+            chain to MITRE ATT&amp;CK. I pair that with vulnerability management (Nessus / Qualys /
+            OpenVAS) and an AWS &amp; networking foundation, so I'm comfortable investigating across
+            endpoints, email, and cloud.
+          </p>
+          <p class="about__signoff">
+            <span class="muted"># goal:</span> join a SOC / IR / forensics team where I can triage
+            real incidents, write the report that holds up, and harden what let the attacker in.
+          </p>
+        </div>
+
+        <div class="about__card">
+          <div class="about__card-head">analyst_profile.json</div>
+          <pre class="about__json"><code><span class="j-brace">{</span>
+  <span class="j-key">"focus"</span>: <span class="j-str">"DFIR / Incident Response"</span>,
+  <span class="j-key">"specialties"</span>: <span class="j-brace">[</span>
+    <span class="j-str">"BEC / Email Security"</span>,
+    <span class="j-str">"Ransomware Triage"</span>,
+    <span class="j-str">"Windows Forensics"</span>
+  <span class="j-brace">]</span>,
+  <span class="j-key">"frameworks"</span>: <span class="j-brace">[</span><span class="j-str">"MITRE ATT&amp;CK"</span>, <span class="j-str">"NIST IR"</span><span class="j-brace">]</span>,
+  <span class="j-key">"siem"</span>: <span class="j-brace">[</span><span class="j-str">"Splunk"</span>, <span class="j-str">"Microsoft Sentinel"</span><span class="j-brace">]</span>,
+  <span class="j-key">"experience"</span>: <span class="j-str">"1 yr SOC / DFIR"</span>,
+  <span class="j-key">"location"</span>: <span class="j-str">"Cincinnati, OH, US"</span>,
+  <span class="j-key">"status"</span>: <span class="j-str">"open_to_work"</span>,
+  <span class="j-key">"clearance"</span>: <span class="j-str">"available on request"</span>
+<span class="j-brace">}</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2 class="section__title"><span class="section__hash">#</span> capabilities</h2>
+        <div class="section__rule"></div>
+      </div>
+
+      <div class="skills">
+        <article class="skillcard">
+          <div class="skillcard__icon">🛡️</div>
+          <h3>DFIR &amp; Threat Analysis</h3>
+          <ul class="tags">
+            <li>Splunk</li><li>Microsoft Sentinel</li><li>Windows Artifacts</li><li>Event Logs</li>
+            <li>Registry</li><li>PCAP Analysis</li><li>EDR Concepts</li><li>IOC Documentation</li>
+          </ul>
+        </article>
+
+        <article class="skillcard">
+          <div class="skillcard__icon">📧</div>
+          <h3>Email Security &amp; BEC</h3>
+          <ul class="tags">
+            <li>Header Analysis</li><li>M365 Sign-in Logs</li><li>Mailbox Rules</li>
+            <li>Forwarding Rules</li><li>Credential Compromise</li><li>Impossible Travel</li>
+          </ul>
+        </article>
+
+        <article class="skillcard">
+          <div class="skillcard__icon">🔒</div>
+          <h3>Ransomware Investigation</h3>
+          <ul class="tags">
+            <li>Initial Access</li><li>Persistence Analysis</li><li>Process Activity</li>
+            <li>Encryption Indicators</li><li>Lateral Movement</li><li>ATT&amp;CK Mapping</li>
+          </ul>
+        </article>
+
+        <article class="skillcard">
+          <div class="skillcard__icon">🧰</div>
+          <h3>Forensics &amp; Security Tools</h3>
+          <ul class="tags">
+            <li>FTK Imager</li><li>Arsenal Image Mounter</li><li>Zimmerman Tools</li>
+            <li>Wireshark</li><li>Autoruns</li><li>Event Viewer</li><li>VirusTotal</li>
+          </ul>
+        </article>
+
+        <article class="skillcard">
+          <div class="skillcard__icon">🌐</div>
+          <h3>Vuln Mgmt &amp; Networking</h3>
+          <ul class="tags">
+            <li>Nessus</li><li>Qualys</li><li>OpenVAS</li><li>CVSS Prioritization</li>
+            <li>Firewall Auditing</li><li>EDR/Patch Compliance</li><li>Network Security</li><li>Detection Tuning</li>
+          </ul>
+        </article>
+
+        <article class="skillcard">
+          <div class="skillcard__icon">☁️</div>
+          <h3>Cloud &amp; Programming</h3>
+          <ul class="tags">
+            <li>AWS (EC2/S3/IAM/VPC)</li><li>Lambda</li><li>CloudWatch</li><li>Python</li>
+            <li>SQL</li><li>Pandas / NumPy</li><li>Linux</li><li>Docker</li><li>Git</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <span class="section__index">03</span>
+        <h2 class="section__title"><span class="section__hash">#</span> experience</h2>
+        <div class="section__rule"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-marker tl-marker--hot"></div>
+          <div class="tl-card tl-card--featured">
+            <div class="tl-card__top">
+              <h3>Software Engineer, Information Security <span class="tl-card__type">— SOC / DFIR</span></h3>
+              <span class="tl-card__date">Jun 2024 – Apr 2025</span>
+            </div>
+            <div class="tl-card__org">UNIZEN Technologies Pvt. Ltd.</div>
+            <ul class="tl-card__list">
+              <li>Triaged <strong>40–60 daily alerts</strong> in <strong>Splunk</strong> and <strong>Microsoft Sentinel</strong>, correlating endpoint, identity, and network telemetry to escalate true positives and cut triage time <strong>~30%</strong> via reusable playbooks.</li>
+              <li>Investigated <strong>60–80 weekly phishing reports</strong> and a full <strong>BEC case</strong> — headers, M365 sign-in logs, and mailbox rules — surfacing IOCs like impossible-travel logins and unauthorized rule changes.</li>
+              <li>Led <strong>ransomware IR</strong> using Windows Event Logs, Registry, Prefetch, and Amcache parsed with FTK Imager, Arsenal Image Mounter, and Zimmerman tools; delivered a <strong>MITRE ATT&amp;CK</strong>-mapped report with containment actions.</li>
+              <li>Analyzed PCAPs in <strong>Wireshark</strong> to flag exfiltration indicators; findings tuned detection rules and reduced false positives <strong>~25%</strong>.</li>
+              <li>Ran scans with <strong>Nessus, Qualys, and OpenVAS</strong>, prioritized by CVSS/exploitability, and drove <strong>20% remediation</strong> of critical/high vulnerabilities within SLA.</li>
+              <li>Audited firewall rules and EDR/patch compliance across managed endpoints; authored <strong>20+ IR reports</strong> used in postmortems and detection engineering.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-card__top">
+              <h3>Network Security Associate <span class="tl-card__type">— Virtual Internship</span></h3>
+              <span class="tl-card__date">Jul 2024 – Sep 2024</span>
+            </div>
+            <div class="tl-card__org">Fortinet (Supported Program) · Remote</div>
+            <ul class="tl-card__list">
+              <li>Studied firewall rules, access control mechanisms, threat detection, and common network attack patterns.</li>
+              <li>Analyzed security monitoring concepts aligned with incident response, risk mitigation, and enterprise defense.</li>
+              <li>Built an understanding of how network controls support detection, containment, and incident prevention.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-marker"></div>
+          <div class="tl-card">
+            <div class="tl-card__top">
+              <h3>AWS Cloud Virtual Intern</h3>
+              <span class="tl-card__date">May 2023 – Jul 2023</span>
+            </div>
+            <div class="tl-card__org">AICTE – EduSkills · Remote</div>
+            <ul class="tl-card__list">
+              <li>Designed AWS architectures (EC2, S3, RDS, Lambda, IAM, VPC) with a focus on secure access and least privilege.</li>
+              <li>Implemented IAM permissions and cloud security best practices to reduce unauthorized-access risk in simulated environments.</li>
+              <li>Used the AWS Console, CLI, and CloudWatch to understand monitoring, alerting, and cloud investigation workflows.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS / CASES ===================== -->
+    <section class="section" id="projects">
+      <div class="section__head">
+        <span class="section__index">04</span>
+        <h2 class="section__title"><span class="section__hash">#</span> case_files</h2>
+        <div class="section__rule"></div>
+      </div>
+
+      <div class="cases">
+        <!-- Case 1 -->
+        <article class="case">
+          <div class="case__head">
+            <div class="case__id">CASE-001</div>
+            <div class="case__sev case__sev--high">SEVERITY: HIGH</div>
+          </div>
+          <h3 class="case__title">Business Email Compromise Investigation Lab</h3>
+          <div class="case__meta">DFIR / Email Security</div>
+          <p class="case__desc">
+            Investigated a simulated BEC incident: reviewed Microsoft 365 sign-in activity,
+            mailbox forwarding rules, inbox rules, and phishing email headers to find the breach.
+          </p>
+          <ul class="case__findings">
+            <li><span class="case__k">IOCs:</span> suspicious IPs, impossible-travel logins, malicious sender domains, unauthorized mailbox rules.</li>
+            <li><span class="case__k">Output:</span> incident timeline + root cause, impacted-account scope, containment &amp; remediation.</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>M365 Logs</li><li>Email Headers</li><li>Wireshark</li><li>Python</li><li>MITRE ATT&amp;CK</li>
+          </ul>
+        </article>
+
+        <!-- Case 2 -->
+        <article class="case">
+          <div class="case__head">
+            <div class="case__id">CASE-002</div>
+            <div class="case__sev case__sev--crit">SEVERITY: CRITICAL</div>
+          </div>
+          <h3 class="case__title">Ransomware IR &amp; Windows Forensics Lab</h3>
+          <div class="case__meta">DFIR / Ransomware Analysis</div>
+          <p class="case__desc">
+            Triaged a simulated ransomware attack using Windows Event Logs, Registry artifacts,
+            Prefetch, Amcache/Shimcache, scheduled tasks, and process activity.
+          </p>
+          <ul class="case__findings">
+            <li><span class="case__k">Timeline:</span> initial access → execution → persistence → encryption → lateral movement.</li>
+            <li><span class="case__k">Report:</span> IOCs, ATT&amp;CK mapping, containment, recovery priorities, hardening.</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>FTK Imager</li><li>Zimmerman Tools</li><li>Event Viewer</li><li>Autoruns</li><li>Wireshark</li>
+          </ul>
+        </article>
+
+        <!-- Case 3 -->
+        <article class="case">
+          <div class="case__head">
+            <div class="case__id">CASE-003</div>
+            <div class="case__sev case__sev--med">TYPE: BUILD</div>
+          </div>
+          <h3 class="case__title">Serverless Notification System</h3>
+          <div class="case__meta">Cloud / Detection Engineering</div>
+          <p class="case__desc">
+            Built a serverless workflow to send automated email/SMS alerts for simulated security
+            events, reminders, and system activity — event-driven alerting on AWS.
+          </p>
+          <ul class="case__findings">
+            <li><span class="case__k">Stack:</span> Lambda triggers, CloudWatch monitoring, S3 logs/templates.</li>
+            <li><span class="case__k">Security:</span> IAM-based access control for least-privilege alerting.</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>AWS SNS</li><li>AWS SES</li><li>Lambda</li><li>CloudWatch</li><li>IAM</li>
+          </ul>
+        </article>
+
+        <!-- Case 4 -->
+        <article class="case">
+          <div class="case__head">
+            <div class="case__id">CASE-004</div>
+            <div class="case__sev case__sev--med">TYPE: ANALYTICS</div>
+          </div>
+          <h3 class="case__title">WhatsApp Chat Analyzer</h3>
+          <div class="case__meta">Data Analytics / Pattern Analysis</div>
+          <p class="case__desc">
+            Python tool to extract and analyze chat data — message frequency, timelines, response
+            behavior, and participant activity — useful for evidence-style interaction analysis.
+          </p>
+          <ul class="case__findings">
+            <li><span class="case__k">Method:</span> text preprocessing + visualization of communication trends.</li>
+            <li><span class="case__k">Insight:</span> identifies high-activity periods and interaction patterns.</li>
+          </ul>
+          <ul class="tags tags--sm">
+            <li>Python</li><li>Pandas</li><li>Matplotlib</li><li>NLTK</li><li>spaCy</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CERTS ===================== -->
+    <section class="section" id="certs">
+      <div class="section__head">
+        <span class="section__index">05</span>
+        <h2 class="section__title"><span class="section__hash">#</span> certifications</h2>
+        <div class="section__rule"></div>
+      </div>
+
+      <div class="certs">
+        <div class="cert"><span class="cert__check">✓</span> Cyber Security Incident Responder Path</div>
+        <div class="cert"><span class="cert__check">✓</span> Fortinet Certified Associate in Cybersecurity</div>
+        <div class="cert"><span class="cert__check">✓</span> AWS Certified Cloud Practitioner</div>
+        <div class="cert"><span class="cert__check">✓</span> Microsoft Azure Fundamentals</div>
+        <div class="cert"><span class="cert__check">✓</span> Microsoft Azure AI Fundamentals</div>
+        <div class="cert"><span class="cert__check">✓</span> MongoDB Certified Associate Developer</div>
+        <div class="cert"><span class="cert__check">✓</span> Oracle Certified Associate</div>
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="edu">
+        <h3 class="edu__heading"><span class="section__hash">#</span> education</h3>
+        <div class="edu__grid">
+          <div class="edu__item">
+            <div class="edu__top">
+              <h4>University of Cincinnati</h4>
+              <span class="edu__date">2025 – 2027</span>
+            </div>
+            <div class="edu__deg">M.Eng. in Computer Science · <strong>GPA 3.875</strong></div>
+            <div class="edu__loc">Cincinnati, OH</div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__top">
+              <h4>KL University</h4>
+              <span class="edu__date">2021 – 2025</span>
+            </div>
+            <div class="edu__deg">B.Tech in Computer Science &amp; Engineering · <strong>CGPA 8.51</strong></div>
+            <div class="edu__loc">Hyderabad, India</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section--contact" id="contact">
+      <div class="section__head">
+        <span class="section__index">06</span>
+        <h2 class="section__title"><span class="section__hash">#</span> establish_connection</h2>
+        <div class="section__rule"></div>
+      </div>
+
+      <div class="contact">
+        <p class="contact__lead">
+          Looking for a <strong>DFIR / SOC / Incident Response analyst</strong>. If you're hiring or
+          want to talk forensics, my channels are open.
+        </p>
+        <div class="contact__grid">
+          <a class="contact__card" href="mailto:burravigneswarareddy1845@gmail.com">
+            <span class="contact__icon">✉</span>
+            <span class="contact__k">Email</span>
+            <span class="contact__v">burravigneswarareddy1845@gmail.com</span>
+          </a>
+          <a class="contact__card" href="tel:+15134419229">
+            <span class="contact__icon">☎</span>
+            <span class="contact__k">Phone</span>
+            <span class="contact__v">+1 513 441 9229</span>
+          </a>
+          <a class="contact__card" href="https://github.com/burravigneswarareddy" target="_blank" rel="noopener">
+            <span class="contact__icon">⌥</span>
+            <span class="contact__k">GitHub</span>
+            <span class="contact__v">@burravigneswarareddy</span>
+          </a>
+          <a class="contact__card" href="https://linkedin.com/in/vigneswara-reddy-burra-a87348245" target="_blank" rel="noopener">
+            <span class="contact__icon">in</span>
+            <span class="contact__k">LinkedIn</span>
+            <span class="contact__v">vigneswara-reddy-burra</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__line">
+      <span class="muted">$</span> echo "Built by Burra Vigneswara Reddy · DFIR &amp; Incident Response"
+    </div>
+    <div class="footer__meta">© <span id="year"></span> · Status: <span class="dot dot--green"></span> systems nominal</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
