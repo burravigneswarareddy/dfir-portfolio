@@ -1,0 +1,90 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#25f4a7"/>
+      <stop offset="1" stop-color="#36d7ff"/>
+    </linearGradient>
+    <linearGradient id="accentV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#25f4a7"/>
+      <stop offset="1" stop-color="#36d7ff"/>
+    </linearGradient>
+    <radialGradient id="glowG" cx="18%" cy="22%" r="55%">
+      <stop offset="0" stop-color="#25f4a7" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#25f4a7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="88%" cy="12%" r="55%">
+      <stop offset="0" stop-color="#36d7ff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#36d7ff" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#25f4a7" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0a0e12"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glowG)"/>
+  <rect width="1200" height="630" fill="url(#glowC)"/>
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="630" fill="url(#accentV)"/>
+  <!-- Outer hairline frame -->
+  <rect x="24" y="24" width="1152" height="582" rx="18" fill="none" stroke="#1d2a36" stroke-width="1.5"/>
+
+  <!-- Terminal dots (top-right hint) -->
+  <circle cx="1086" cy="74" r="7" fill="#ff5f56"/>
+  <circle cx="1110" cy="74" r="7" fill="#ffbd2e"/>
+  <circle cx="1134" cy="74" r="7" fill="#27c93f"/>
+
+  <!-- Faded prompt motif (bottom-right) -->
+  <text x="1140" y="600" font-family="'Menlo','Courier New',monospace" font-size="240" font-weight="700"
+        fill="#25f4a7" fill-opacity="0.05" text-anchor="end">&gt;_</text>
+
+  <!-- Status pill -->
+  <rect x="72" y="86" width="372" height="40" rx="20" fill="#25f4a7" fill-opacity="0.06" stroke="#25f4a7" stroke-opacity="0.35"/>
+  <circle cx="96" cy="106" r="6" fill="#25f4a7"/>
+  <text x="116" y="112" font-family="'Menlo','Courier New',monospace" font-size="17" letter-spacing="2"
+        fill="#25f4a7">OPEN TO DFIR / SOC / IR ROLES</text>
+
+  <!-- Prompt line -->
+  <text x="72" y="178" font-family="'Menlo','Courier New',monospace" font-size="22" fill="#54677a">
+    <tspan fill="#25f4a7">root@dfir</tspan>:<tspan fill="#36d7ff">~</tspan># whoami
+  </text>
+
+  <!-- Name -->
+  <text x="70" y="268" font-family="'Helvetica Neue','Arial',sans-serif" font-size="74" font-weight="800"
+        letter-spacing="-1" fill="#eaf2f8">BURRA VIGNESWARA</text>
+  <text x="70" y="350" font-family="'Helvetica Neue','Arial',sans-serif" font-size="74" font-weight="800"
+        letter-spacing="-1" fill="url(#accent)">REDDY</text>
+
+  <!-- Subtitle -->
+  <text x="74" y="408" font-family="'Menlo','Courier New',monospace" font-size="27" fill="#36d7ff">
+    &gt; Digital Forensics &amp; Incident Response
+  </text>
+
+  <!-- Divider -->
+  <rect x="74" y="432" width="280" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <!-- Tag chips -->
+  <g font-family="'Menlo','Courier New',monospace" font-size="17" fill="#cdd9e3">
+    <rect x="72"  y="470" width="150" height="42" rx="8" fill="#111a22" stroke="#25394a"/>
+    <text x="147" y="497" text-anchor="middle">SIEM Triage</text>
+
+    <rect x="236" y="470" width="212" height="42" rx="8" fill="#111a22" stroke="#25394a"/>
+    <text x="342" y="497" text-anchor="middle">Windows Forensics</text>
+
+    <rect x="462" y="470" width="186" height="42" rx="8" fill="#111a22" stroke="#25394a"/>
+    <text x="555" y="497" text-anchor="middle">BEC / Phishing</text>
+
+    <rect x="662" y="470" width="184" height="42" rx="8" fill="#111a22" stroke="#25394a"/>
+    <text x="754" y="497" text-anchor="middle">Ransomware IR</text>
+
+    <rect x="860" y="470" width="180" height="42" rx="8" fill="#111a22" stroke="#25394a"/>
+    <text x="950" y="497" text-anchor="middle">MITRE ATT&amp;CK</text>
+  </g>
+
+  <!-- URL -->
+  <text x="74" y="566" font-family="'Menlo','Courier New',monospace" font-size="22" fill="#54677a">
+    <tspan fill="#25f4a7">$</tspan> burravigneswarareddy.github.io/dfir-portfolio
+  </text>
+</svg>
