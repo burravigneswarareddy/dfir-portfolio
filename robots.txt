@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://burravigneswarareddy.github.io/dfir-portfolio/sitemap.xml
